@@ -251,17 +251,17 @@ This project is designed to demonstrate practical knowledge aligned with the Mic
 
 ### Roadmap
 
- * Create GitHub repository
- Define project organization
- Define initial architecture scope
- Design management-group hierarchy
- Define subscription strategy
- Define resource-group strategy
- Implement Azure Policy
- Implement RBAC
- Implement tagging standards
- Design monitoring
- Create architecture diagram
- Implement Terraform
- Test and validate architecture
- Complete documentation
+Create GitHub repository
+Define project organization
+Define initial architecture scope
+Design management-group hierarchy
+Define subscription strategy
+Define resource-group strategy
+Implement Azure Policy
+Implement RBAC
+Implement tagging standards
+Design monitoring
+Create architecture diagram
+Implement Terraform
+Test and validate architecture
+Complete documentation
