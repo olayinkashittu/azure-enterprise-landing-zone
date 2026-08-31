@@ -98,38 +98,54 @@ Example governance policies include:
 - Enforce organizational standards
 - Monitor policy compliance
 
-## RBAC Strategy
+## Identity and Access Management
 
-Access will follow the principle of least privilege.
+Access to NovaSol Enterprise will follow the **principle of least privilege**.
 
-### Example Roles
+The architecture distinguishes between **Microsoft Entra ID roles** and **Azure RBAC roles**.
 
-| Role | Purpose |
+### Microsoft Entra ID Roles
+
+Microsoft Entra ID roles manage identity-related resources and tenant-level directory administration.
+
+| Microsoft Entra ID Role | Purpose |
 |---|---|
-| Global Administrator | Microsoft Entra tenant administration |
-| Owner | Full Azure resource management |
-| Contributor | Resource deployment and management |
-| Reader | Read-only access |
-| Security Reader | Security monitoring and investigation |
+| Global Administrator | Full administrative access to the Microsoft Entra tenant |
+| User Administrator | Manage users and groups |
+| Security Administrator | Manage security-related identity settings |
 
-## Resource Naming Convention
+### Azure RBAC Roles
 
-Resources will follow a standardized naming pattern.
+Azure RBAC controls access to Azure resources such as subscriptions, resource groups, and individual resources.
 
-### Examples
+| Azure RBAC Role | Purpose |
+|---|---|
+| Owner | Full access to Azure resources, including the ability to assign Azure RBAC roles |
+| Contributor | Create and manage Azure resources but cannot assign Azure RBAC roles |
+| Reader | Read-only access to Azure resources |
+| Security Reader | View security-related information and recommendations |
+
+### Access Control Model
 
 ```bash
-rg-ns-prod-app
-rg-ns-dev-app
-vnet-ns-prod-01
-snet-ns-prod-app
-kv-ns-prod-01
-log-ns-prod-01
-stnsprod01
+Microsoft Entra ID
+        │
+        ├── Identity Administration
+        │
+        └── Users & Groups
+                │
+                ▼
+           Azure RBAC
+                │
+                ├── Management Group
+                ├── Subscription
+                ├── Resource Group
+                └── Azure Resource
 ```
 
+### Environment Codes
+
 ```bash
-Environment Codes
 prod = Production
 dev  = Development
 test = Testing
