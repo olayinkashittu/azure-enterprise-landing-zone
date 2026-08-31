@@ -250,7 +250,8 @@ This project is designed to demonstrate practical knowledge aligned with the Mic
 ### 🚧 In Progress
 
 ### Roadmap
- Create GitHub repository
+
+ * Create GitHub repository
  Define project organization
  Define initial architecture scope
  Design management-group hierarchy
