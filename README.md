@@ -228,3 +228,39 @@ docs/
 ├── 08-monitoring.md
 └── 09-design-decisions.md
 ```
+
+### Learning Objectives
+
+This project is designed to demonstrate practical knowledge aligned with the Microsoft Azure Solutions Architect Expert (AZ-305) learning objectives.
+
+### Key Areas
+
+- Azure governance
+- Identity and access
+- Azure infrastructure
+- Resource organization
+- Security
+- Monitoring
+- High availability
+- Infrastructure as Code
+- Architecture decision-making
+
+### Project Status
+
+### 🚧 In Progress
+
+### Roadmap
+ Create GitHub repository
+ Define project organization
+ Define initial architecture scope
+ Design management-group hierarchy
+ Define subscription strategy
+ Define resource-group strategy
+ Implement Azure Policy
+ Implement RBAC
+ Implement tagging standards
+ Design monitoring
+ Create architecture diagram
+ Implement Terraform
+ Test and validate architecture
+ Complete documentation
