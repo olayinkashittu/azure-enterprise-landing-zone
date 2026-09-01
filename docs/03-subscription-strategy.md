@@ -59,6 +59,7 @@ Tenant Root
     │
     └── Sandbox
            └── Sandbox Subscription
+```
 
 ## 5. Management Subscription
 
