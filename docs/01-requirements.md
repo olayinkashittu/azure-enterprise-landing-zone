@@ -108,3 +108,115 @@ admin@novasol.test
 developer@novasol.test
 security@novasol.test
 ```
+
+These identities are fictional and must not be used as real public identities.
+
+## 7. Governance Requirements
+
+Azure governance must ensure that resources follow organizational standards.
+
+The landing zone should enforce:
+
+- Approved Azure regions
+- Required resource tags
+- Standard naming conventions
+- Approved resource types
+- Appropriate RBAC assignments
+- Environment separation
+- Security standards
+  
+## 8. Security Requirements
+
+NovaSol Enterprise will follow the principle of least privilege.
+
+Access will be separated between:
+
+### Microsoft Entra ID administration
+
+and
+
+### Azure resource authorization
+
+Azure RBAC will be applied at the appropriate management group, subscription, resource group, or resource scope.
+
+## 9. Cost Management Requirements
+
+The architecture should provide visibility and accountability for Azure spending.
+
+Resources should use standardized tags such as:
+
+```bash
+Environment
+Department
+Application
+Owner
+CostCenter
+Criticality
+```
+
+These tags will help identify resource ownership, environment, and cost allocation.
+
+## 10. Scalability Requirements
+
+The landing zone must allow NovaSol Enterprise to:
+
+- Add new subscriptions
+- Add new departments
+- Add new workloads
+- Expand governance policies
+- Introduce additional Azure services
+- Scale the architecture without redesigning the entire foundation
+  
+## 11. Availability and Business Continuity
+
+Critical workloads should be designed with appropriate availability and recovery requirements.
+
+Future workload architectures will consider:
+
+- Availability Zones
+- Region redundancy
+- Backup
+- Disaster recovery
+- Recovery Time Objective (RTO)
+- Recovery Point Objective (RPO)
+  
+## 12. Project Constraints
+
+This is an educational and portfolio project.
+
+The implementation will prioritize:
+
+- Free or low-cost Azure services
+- Azure Portal
+- Microsoft Learn
+- Azure Cloud Shell
+- Terraform
+- GitHub
+- Architecture documentation
+
+Expensive Azure resources will only be deployed when required for demonstrating an architectural concept.
+
+## 13. Success Criteria
+
+The project will be considered successful when NovaSol Enterprise has a documented and validated landing zone architecture covering:
+
+- Management groups
+- Subscription strategy
+- Resource organization
+- Azure Policy
+- RBAC
+- Resource tagging
+- Security
+- Monitoring
+- Infrastructure as Code
+- Architecture documentation
+  
+## 14. Project Status
+
+### Status: 🚧 In Progress
+
+### Project Type: Azure Cloud Architecture / AZ-305 Portfolio Project
+
+### Organization: NovaSol Enterprise
+
+### Environment: Microsoft Azure
