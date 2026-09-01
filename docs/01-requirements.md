@@ -213,10 +213,10 @@ The project will be considered successful when NovaSol Enterprise has a document
   
 ## 14. Project Status
 
-### Status: 🚧 In Progress
+Status: 🚧 In Progress
 
-### Project Type: Azure Cloud Architecture / AZ-305 Portfolio Project
+Project Type: Azure Cloud Architecture / AZ-305 Portfolio Project
 
-### Organization: NovaSol Enterprise
+Organization: NovaSol Enterprise
 
-### Environment: Microsoft Azure
+Environment: Microsoft Azure
