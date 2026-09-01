@@ -122,3 +122,38 @@ rg-ns-prod-app
 rg-ns-prod-network
 rg-ns-prod-data
 ```
+
+### Possible Workloads
+
+- Web applications
+- APIs
+- Databases
+- Storage
+- Business applications
+  
+### Security Considerations
+
+Production workloads will have stricter governance requirements than development and sandbox environments.
+
+Examples include:
+
+- Restricted resource locations
+- Mandatory resource tags
+- Approved resource types
+- Strong RBAC controls
+- Security monitoring
+- Backup requirements
+- Network security controls
+  
+### 8. Development Subscription
+Purpose
+
+The Development subscription will provide an isolated environment for application development and engineering activities.
+
+### Example Resource Groups
+
+```bash
+rg-ns-dev-app
+rg-ns-dev-network
+rg-ns-dev-data
+```
