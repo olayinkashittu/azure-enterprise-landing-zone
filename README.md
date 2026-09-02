@@ -8,6 +8,12 @@ This project demonstrates the design and implementation of a governed Azure Ente
 
 The architecture focuses on centralized governance, security, identity, resource organization, monitoring, and Infrastructure as Code.
 
+## Architecture
+
+The following diagram illustrates the proposed Azure Enterprise Landing Zone architecture for NovaSol Enterprise, including management groups, subscriptions, resource groups, workloads, and cross-cutting governance controls.
+
+![NovaSol Enterprise Azure Landing Zone Architecture](architecture/azure-enterprise-landing-zone.png)
+
 ## Organization
 
 **Organization:** NovaSol Enterprise
