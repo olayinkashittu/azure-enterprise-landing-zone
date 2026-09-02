@@ -58,3 +58,38 @@ NovaSol Enterprise
             ▼
        Azure Workloads
 ```
+
+### Infrastructure as Code Principles
+
+The Terraform implementation follows these principles:
+
+- Reusable configuration
+- Consistent naming
+- Parameterized variables
+- Infrastructure as Code
+- Version-controlled infrastructure
+- Separation of configuration and deployment
+- Alignment with Azure governance requirements
+- Least-privilege access
+- Cost-conscious deployment
+
+### Current Status
+
+The Terraform configuration currently provides the foundation for the Azure Landing Zone implementation.
+
+No Azure resources are deployed by this documentation-only stage.
+
+### Future Implementation
+
+Future Terraform development may include:
+
+- Resource groups
+- Azure Policy assignments
+- Role-based access control
+- Networking resources
+- Log Analytics
+- Monitoring configuration
+- Diagnostic settings
+- Additional landing-zone governance components
+
+Any actual Azure deployment will be performed only after validating the Terraform configuration and confirming the required Azure subscription and cost implications.
