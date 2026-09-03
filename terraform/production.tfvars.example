@@ -1,0 +1,6 @@
+project_name = "NovaSol"
+environment  = "Production"
+location     = "West Europe"
+owner        = "CloudTeam"
+department   = "IT"
+cost_center  = "IT-001"
