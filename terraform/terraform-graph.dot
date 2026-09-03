@@ -1,0 +1,8 @@
+﻿digraph G {
+  rankdir = "RL";
+  node [shape = rect, fontname = "sans-serif"];
+  "azurerm_resource_group.application" [label="azurerm_resource_group.application"];
+  "azurerm_resource_group.data" [label="azurerm_resource_group.data"];
+  "azurerm_resource_group.landing_zone" [label="azurerm_resource_group.landing_zone"];
+  "azurerm_resource_group.network" [label="azurerm_resource_group.network"];
+}
