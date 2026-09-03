@@ -8,6 +8,14 @@ variable "environment" {
   description = "Deployment environment"
   type        = string
   default     = "Production"
+
+  validation {
+    condition = contains(
+      ["Production", "Development", "Testing", "Sandbox"],
+      var.environment
+    )
+    error_message = "Environment must be Production, Development, Testing, or Sandbox."
+  }
 }
 
 variable "location" {
