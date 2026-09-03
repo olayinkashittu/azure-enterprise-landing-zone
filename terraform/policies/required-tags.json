@@ -1,0 +1,21 @@
+{
+    "if":  {
+               "anyOf":  [
+                             {
+                                 "field":  "tags[\u0027Environment\u0027]",
+                                 "exists":  "false"
+                             },
+                             {
+                                 "field":  "tags[\u0027Owner\u0027]",
+                                 "exists":  "false"
+                             },
+                             {
+                                 "field":  "tags[\u0027CostCenter\u0027]",
+                                 "exists":  "false"
+                             }
+                         ]
+           },
+    "then":  {
+                 "effect":  "deny"
+             }
+}

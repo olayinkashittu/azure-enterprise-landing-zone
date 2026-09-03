@@ -23,3 +23,17 @@ resource "azurerm_policy_definition" "allowed_regions" {
 
   policy_rule = file("${path.module}/policies/allowed-regions.json")
 }
+resource "azurerm_policy_definition" "required_tags" {
+  name         = "novasol-required-tags"
+  policy_type  = "Custom"
+  mode         = "Indexed"
+  display_name = "NovaSol - Required Resource Tags"
+  description  = "Requires Environment, Owner, and CostCenter tags on NovaSol Enterprise resources."
+
+  metadata = jsonencode({
+    category = "Governance"
+    version  = "1.0.0"
+  })
+
+  policy_rule = file("${path.module}/policies/required-tags.json")
+}
