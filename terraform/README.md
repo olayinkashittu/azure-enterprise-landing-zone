@@ -27,6 +27,19 @@ The Terraform configuration currently defines the following project settings:
 | `department` | `IT` |
 | `cost_center` | `IT-001` |
 
+## Environment Configuration
+
+Terraform variables can be provided through a `.tfvars` file.
+
+A sample production configuration is provided as:
+
+`production.tfvars.example`
+
+To create a local production configuration:
+
+```powershell
+Copy-Item production.tfvars.example production.tfvars
+
 ## Architecture Alignment
 
 The Terraform configuration supports the overall Azure Enterprise Landing Zone design documented in this repository.
