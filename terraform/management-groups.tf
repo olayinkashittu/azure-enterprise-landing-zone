@@ -11,10 +11,34 @@ resource "azurerm_management_group" "platform" {
   parent_management_group_id = azurerm_management_group.novasol_root.id
 }
 
+resource "azurerm_management_group" "management" {
+  display_name               = "Management"
+  name                       = "novasol-management"
+  parent_management_group_id = azurerm_management_group.platform.id
+}
+
+resource "azurerm_management_group" "security" {
+  display_name               = "Security"
+  name                       = "novasol-security"
+  parent_management_group_id = azurerm_management_group.platform.id
+}
+
 resource "azurerm_management_group" "landing_zones" {
   display_name               = "Landing Zones"
   name                       = "novasol-landing-zones"
   parent_management_group_id = azurerm_management_group.novasol_root.id
+}
+
+resource "azurerm_management_group" "corp" {
+  display_name               = "Corp"
+  name                       = "novasol-corp"
+  parent_management_group_id = azurerm_management_group.landing_zones.id
+}
+
+resource "azurerm_management_group" "online" {
+  display_name               = "Online"
+  name                       = "novasol-online"
+  parent_management_group_id = azurerm_management_group.landing_zones.id
 }
 
 resource "azurerm_management_group" "sandbox" {
@@ -28,3 +52,4 @@ resource "azurerm_management_group" "decommissioned" {
   name                       = "novasol-decommissioned"
   parent_management_group_id = azurerm_management_group.novasol_root.id
 }
+
