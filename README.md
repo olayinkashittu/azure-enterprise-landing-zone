@@ -2,6 +2,11 @@
 
 A governed Azure Enterprise Landing Zone architecture and implementation project designed for NovaSol Enterprise.
 
+Designed and implemented a governed Azure Enterprise Landing Zone for **NovaSol Enterprise**, including management-group hierarchy, subscription strategy, Azure Policy, RBAC, tagging, security, monitoring, cost governance, and Infrastructure as Code using Terraform.
+
+The implementation was developed and validated **locally without deploying Azure resources or incurring Azure infrastructure costs**. Terraform configuration and Azure Policy definitions were validated locally to demonstrate enterprise cloud governance and Infrastructure as Code practices.
+
+
 ## Project Overview
 
 This project demonstrates the design and implementation of a governed Azure Enterprise Landing Zone for a fictional organization.
